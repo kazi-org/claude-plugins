@@ -1,0 +1,15 @@
+{
+  "name": "kazi",
+  "owner": {
+    "name": "kazi-org",
+    "url": "https://github.com/kazi-org"
+  },
+  "plugins": [
+    {
+      "name": "kazi",
+      "source": "./plugins/kazi",
+      "description": "Drive kazi -- an outer-loop reconciliation controller that converges a software goal to machine-checkable acceptance predicates -- from Claude Code: the kazi skill, the kazi MCP server, and the session-bus hooks in one install.",
+      "version": "0.0.0"
+    }
+  ]
+}
