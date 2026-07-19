@@ -1,1 +1,61 @@
-{"name":"kazi","version":"0.0.0"}
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "author": {
+    "name": "kazi-org",
+    "url": "https://github.com/kazi-org/kazi"
+  },
+  "description": "Drive kazi -- an outer-loop reconciliation controller that converges a software goal to machine-checkable acceptance predicates -- from Claude Code: the kazi skill, the kazi MCP server, and the session-bus hooks in one install.",
+  "displayName": "kazi",
+  "homepage": "https://github.com/kazi-org/kazi",
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "command": "kazi bus hook notification",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "kazi bus hook session-start",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "kazi bus hook turn",
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  },
+  "keywords": [
+    "kazi",
+    "reconciliation",
+    "predicates",
+    "agent",
+    "mcp"
+  ],
+  "license": "Apache-2.0",
+  "mcpServers": {
+    "kazi": {
+      "args": [
+        "mcp"
+      ],
+      "command": "kazi"
+    }
+  },
+  "name": "kazi",
+  "repository": "https://github.com/kazi-org/kazi",
+  "version": "1.250.0"
+}
