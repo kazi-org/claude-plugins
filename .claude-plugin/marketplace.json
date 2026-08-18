@@ -10,6 +10,12 @@
       "source": "./plugins/kazi",
       "description": "Drive kazi -- an outer-loop reconciliation controller that converges a software goal to machine-checkable acceptance predicates -- from Claude Code: the kazi skill, the kazi MCP server, and the session-bus hooks in one install.",
       "version": "1.250.0"
+    },
+    {
+      "name": "dira",
+      "source": "./plugins/dira",
+      "description": "dira gives your coding agent a memory for why: a git-native decision ledger \u2014 hooks capture decisions as you work, one-keystroke review stages them, and every session starts with the brief. Requires the dira binary (brew install kazi-org/tap/dira).",
+      "version": "0.1.0"
     }
   ]
 }
